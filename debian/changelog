@@ -1,0 +1,5 @@
+kafka (0.8.1.1-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Aleksey Morarash <aleksey.morarash@gmail.com>  Wed, 16 Jun 2014 13:08:00 +0300

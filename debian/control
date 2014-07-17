@@ -1,0 +1,14 @@
+Source: kafka
+Section: database
+Priority: extra
+Maintainer: Aleksey Morarash <aleksey.morarash@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), build-essential, openjdk-7-jdk
+Standards-Version: 3.9.3
+Homepage: http://kafka.apache.org/
+
+Package: kafka
+Architecture: any
+Depends: openjdk-7-jre-headless
+Description: Distributed, partitioned, replicated commit log service.
+ Kafka is a distributed, partitioned, replicated commit log service.
+ It provides the functionality of a messaging system, but with a unique design.
