@@ -3,8 +3,20 @@
 %:
 	dh $@
 
+SLF4J_VERSION = 1.7.7
+SLF4J = slf4j-$(SLF4J_VERSION)
+
 override_dh_auto_build:
 	./gradlew jar
+# download slf4j-simple JAR library needed for
+# bin/kafka-console-consumer.sh script to work
+	curl --fail --show-error --location \
+	    --output $(SLF4J).tar.gz \
+	    'http://www.slf4j.org/dist/$(SLF4J).tar.gz'
+	tar xf $(SLF4J).tar.gz
+	install -m 644 $(SLF4J)/slf4j-simple-$(SLF4J_VERSION).jar \
+	    core/build/dependant-libs-2.8.0/
+	rm -rf $(SLF4J) $(SLF4J).tar.gz
 
 DESTDIR = debian/kafka
 override_dh_auto_install:

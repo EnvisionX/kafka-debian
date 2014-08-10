@@ -2,7 +2,7 @@ Source: kafka
 Section: database
 Priority: extra
 Maintainer: Aleksey Morarash <aleksey.morarash@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), build-essential, openjdk-7-jdk
+Build-Depends: debhelper (>= 8.0.0), build-essential, openjdk-7-jdk, curl
 Standards-Version: 3.9.3
 Homepage: http://kafka.apache.org/
 
