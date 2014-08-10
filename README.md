@@ -33,7 +33,7 @@ into a DEB package for the Debian Wheezy distro.
 
 ## Installing the Kafka server from the APT repository
 
-```apt-get install kafka```
+```apt-get install kafka-daemon```
 
 Directory layout:
 

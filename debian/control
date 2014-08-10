@@ -12,3 +12,9 @@ Depends: openjdk-7-jre-headless
 Description: Distributed, partitioned, replicated commit log service.
  Kafka is a distributed, partitioned, replicated commit log service.
  It provides the functionality of a messaging system, but with a unique design.
+
+Package: kafka-daemon
+Architecture: all
+Depends: kafka
+Description: Scripts needed to run Kafka as system daemon
+ Scripts needed to run Kafka as system daemon.

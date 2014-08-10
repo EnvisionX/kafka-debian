@@ -18,7 +18,11 @@ override_dh_auto_build:
 	    core/build/dependant-libs-2.8.0/
 	rm -rf $(SLF4J) $(SLF4J).tar.gz
 
+# Do not install init script automatically
+override_dh_installinit:
+
 DESTDIR = debian/kafka
+DMN_DESTDIR = debian/kafka-daemon
 override_dh_auto_install:
 	install -m 755 -d $(DESTDIR)/etc/kafka
 	install -m 644 config/*.properties $(DESTDIR)/etc/kafka
@@ -44,3 +48,6 @@ override_dh_auto_install:
 	sed -i 's#/tmp/zookeeper#/var/lib/kafka/zookeeper#' $(DESTDIR)/etc/kafka/zookeeper.properties
 	sed -i 's#/tmp/kafka-logs#/var/lib/kafka/logs#' $(DESTDIR)/etc/kafka/server.properties
 	install -m 755 -d $(DESTDIR)/var/lib/kafka $(DESTDIR)/var/log/kafka
+# install init script manually
+	install -m 755 -d $(DMN_DESTDIR)/etc/init.d
+	install -m 755 debian/init $(DMN_DESTDIR)/etc/init.d/kafka
