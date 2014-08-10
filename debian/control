@@ -7,7 +7,7 @@ Standards-Version: 3.9.3
 Homepage: http://kafka.apache.org/
 
 Package: kafka
-Architecture: any
+Architecture: all
 Depends: openjdk-7-jre-headless
 Description: Distributed, partitioned, replicated commit log service.
  Kafka is a distributed, partitioned, replicated commit log service.
