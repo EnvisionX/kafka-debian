@@ -1,3 +1,9 @@
+kafka (0.8.2.2-1) unstable; urgency=low
+
+  * new upstream version.
+
+ -- Aleksey Morarash <aleksey.morarash@gmail.com>  Tue, 05 Jan 2016 14:41:00 +0200
+
 kafka (0.8.1.1-5) unstable; urgency=low
 
   * include slf4j-simple JAR in the binary package;

@@ -1,0 +1,2 @@
+/etc/kafka /usr/lib/kafka/config
+/var/log/kafka /usr/lib/kafka/logs

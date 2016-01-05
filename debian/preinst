@@ -1,17 +1,13 @@
-#!/bin/sh
-
-set -e
+#!/bin/sh -e
 
 case "$1" in
-    remove|deconfigure)
-        service kafka stop || :
+    install|upgrade)
+        adduser --system --group --no-create-home --home=/var/lib/kafka kafka || :
         ;;
-    upgrade)
-        ;;
-    failed-upgrade)
+    abort-upgrade)
         ;;
     *)
-        echo "prerm called with unknown argument \`$1'" >&2
+        echo "preinst called with unknown argument \`$1'" >&2
         exit 1
         ;;
 esac

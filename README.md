@@ -5,9 +5,12 @@ scripts and configs needed to package the
 [Apache Kafka](http://kafka.apache.org/) server
 into a DEB package for the Debian Wheezy distro.
 
+The specs are adapted to pre-built Apache Kafka.
+
 ## Short DEB-packaging HowTo
 
-1. Download the upstream tarball from the [Kafka site](http://kafka.apache.org/downloads.html);
+1. Download the upstream tarball with pre-built Apache Kafka from the
+ [Kafka site](http://kafka.apache.org/downloads.html);
 
 2. Unpack the tarball:
 
@@ -26,14 +29,14 @@ into a DEB package for the Debian Wheezy distro.
 
 ```sudo pbuilder --build kafka_$version-$release.dsc```
 
-6. Include the source and the binary packages into a APT repository
+6. Include the source and the binary packages into an APT repository
 (need to configure _reprepro_ if not configured yet):
 
-```reprepro -b /path/to/apt/repo/dir/ include wheezy kafka_$version-$release.changes```
+```reprepro include $suite kafka_$version-$release.changes```
 
 ## Installing the Kafka server from the APT repository
 
-```apt-get install kafka-daemon```
+```apt-get install kafka```
 
 Directory layout:
 

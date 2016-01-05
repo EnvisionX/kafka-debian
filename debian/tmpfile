@@ -1,0 +1,6 @@
+#
+# Config file for the Kafka runtime files and directories
+#
+
+d /var/lib/kafka 0755 kafka kafka -
+d /var/log/kafka 0755 kafka kafka -

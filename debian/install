@@ -1,0 +1,3 @@
+config/*.properties /etc/kafka
+bin/*.sh /usr/lib/kafka/bin
+libs/*.jar /usr/lib/kafka/libs
