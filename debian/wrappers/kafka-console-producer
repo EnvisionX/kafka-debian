@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/lib/kafka/bin/kafka-console-producer.sh $@
