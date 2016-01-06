@@ -3,3 +3,4 @@ bin/*.sh /usr/lib/kafka/bin
 libs/*.jar /usr/lib/kafka/libs
 debian/wrappers/kafka-topics /usr/bin
 debian/wrappers/kafka-console-producer /usr/bin
+debian/wrappers/kafka-console-consumer /usr/bin
