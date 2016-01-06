@@ -1,3 +1,4 @@
 config/*.properties /etc/kafka
 bin/*.sh /usr/lib/kafka/bin
 libs/*.jar /usr/lib/kafka/libs
+debian/wrappers/kafka-topics /usr/bin
