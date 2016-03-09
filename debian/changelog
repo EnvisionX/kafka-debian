@@ -4,7 +4,7 @@ kafka (0.8.2.2-3) unstable; urgency=low
   * add /usr/bin/kafka-console-producer wrapper script;
   * add /usr/bin/kafka-console-consumer wrapper script.
 
- -- Aleksey Morarash <aleksey.morarash@gmail.com>  Wed, 06 Jan 2016 17:08:00 +0200
+ -- Aleksey Morarash <aleksey.morarash@gmail.com>  Wed, 06 Jan 2016 14:59:00 +0200
 
 kafka (0.8.2.2-1) unstable; urgency=low
 
