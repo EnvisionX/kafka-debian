@@ -1,0 +1,9 @@
+/var/log/kafka/configure-topics.log {
+    daily
+    maxsize 50M
+    compress
+    delaycompress
+    missingok
+    notifempty
+    maxage 5
+}
