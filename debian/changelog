@@ -1,3 +1,9 @@
+kafka (0.8.2.2-6) unstable; urgency=low
+
+  * add topics configuration script
+
+ -- Aleksey Morarash <aleksey.morarash@gmail.com>  Fri, 05 Aug 2016 11:19:00 +0300
+
 kafka (0.8.2.2-5) unstable; urgency=low
 
   * remove working files and logs on purge.
