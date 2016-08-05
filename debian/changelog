@@ -1,3 +1,9 @@
+kafka (0.8.2.2-5) unstable; urgency=low
+
+  * remove working files and logs on purge.
+
+ -- Aleksey Morarash <aleksey.morarash@gmail.com>  Mon, 28 Mar 2016 15:02:00 +0300
+
 kafka (0.8.2.2-4) unstable; urgency=low
 
   * set default loglevel to WARN.
