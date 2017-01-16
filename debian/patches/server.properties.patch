@@ -9,3 +9,14 @@
  
  # The default number of log partitions per topic. More partitions allow greater
  # parallelism for consumption, but this will also result in more files across
+@@ -119,3 +119,10 @@
+ 
+ # Timeout in ms for connecting to zookeeper
+ zookeeper.connection.timeout.ms=6000
++
++## ENVISIONX Note
++## Documentation for Kafka 0.8.2.x states auto.create.topics.enable is true by default,
++## but in some cases Kafka failed to autocreate the topic when this variable is not set
++## to true explicitly.
++## See ticket#1240 for more details.
++auto.create.topics.enable=true
