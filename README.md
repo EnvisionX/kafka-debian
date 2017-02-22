@@ -11,6 +11,9 @@ The specs are adapted to pre-built Apache Kafka.
 
 1. Download the upstream tarball with pre-built Apache Kafka from the
  [Kafka site](http://kafka.apache.org/downloads.html);
+ or use ``uscan`` to download automatically:
+
+```uscan -v --download-current-version```
 
 2. Unpack the tarball:
 
