@@ -3,7 +3,7 @@
 The repo contains so called DEBIAN directory with
 scripts and configs needed to package the
 [Apache Kafka](http://kafka.apache.org/) server
-into a DEB package for the Debian Wheezy distro.
+into a DEB package for the Debian Jessie distro.
 
 The specs are adapted to pre-built Apache Kafka.
 
