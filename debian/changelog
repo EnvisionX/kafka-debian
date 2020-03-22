@@ -1,3 +1,11 @@
+kafka (0.9.0) unstable; urgency=low
+
+  * README minor update: forget about Wheezy
+  * Merge pull request #2 from fpytloun/uscan
+  * Add debian/watch for uscan
+
+ -- Oleksii Klitovchenko <oleksii.klitovchenko@envisionx.co>  Sun, 22 Mar 2020 10:00:23 +0200
+
 kafka (0.8.2.2-7) unstable; urgency=low
 
   * extend topics configuration script;
