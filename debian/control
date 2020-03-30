@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/EnvisionX/kafka-debian
 
 Package: kafka
 Architecture: all
-Depends: openjdk-7-jre-headless, logrotate, cron
+Depends: java7-runtime-headless, logrotate, cron
 Description: Distributed, partitioned, replicated commit log service.
  Kafka is a distributed, partitioned, replicated commit log service.
  It provides the functionality of a messaging system, but with a unique design.
